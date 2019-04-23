@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 2-Empresa</title>
+</head>
+<body>
+    <script>
+    let dias, cont=0, horas,TotalHoras,Htrabxdia,Sueldo,SueldoSem;
+
+	Sueldo=parseFloat(prompt("Escriba el sueldo que va ganar por hora"));
+	
+    do{
+		dias=cont+1;
+        
+		Htrabxdia=parseInt(prompt("Ingrese el numero de horas trabajadas el dia: "+dias));
+
+		TotalHoras=TotalHoras+Htrabxdia;
+		cont++;
+	}while(dias<5);
+	
+	SueldoSem= parseInt(TotalHoras*Sueldo);
+
+    alert(`El sueldo semanal es: ${SueldoSem}`);
+    </script>
+</body>
+</html>
